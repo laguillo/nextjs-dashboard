@@ -1,14 +1,14 @@
-import CardWrapper, { Card } from "@/src/app/ui/dashboard/cards";
-import RevenueChart from "@/src/app/ui/dashboard/revenue-chart";
-import LatestInvoices from "@/src/app/ui/dashboard/latest-invoices";
-import { lusitana } from "@/src/app/ui/fonts";
 import { Suspense } from "react";
+import { Metadata } from "next";
+import { lusitana } from "@/components/fonts";
+import CardWrapper from "@/components/dashboard/cards";
+import LatestInvoices from "@/components/dashboard/latest-invoices";
+import RevenueChart from "@/components/dashboard/revenue-chart";
 import {
   CardsSkeleton,
-  LatestInvoicesSkeleton,
   RevenueChartSkeleton,
-} from "@/src/app/ui/skeletons";
-import { Metadata } from "next";
+  LatestInvoicesSkeleton,
+} from "@/components/skeletons";
 
 export const metadata: Metadata = {
   title: "Dashboard",

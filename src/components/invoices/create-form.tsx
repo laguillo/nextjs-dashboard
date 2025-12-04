@@ -1,6 +1,6 @@
 "use client";
 
-import { CustomerField } from "@/src/app/lib/definitions";
+import { CustomerField } from "@/lib/definitions";
 import Link from "next/link";
 import {
   CheckIcon,
@@ -8,9 +8,9 @@ import {
   CurrencyDollarIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
-import { Button } from "@/src/app/ui/button";
-import { createInvoice, State } from "@/src/app/lib/actions";
+import { createInvoice, State } from "@/lib/actions";
 import { useActionState } from "react";
+import { Button } from "@/components/ui/button";
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState: State = { message: null, errors: {} };
@@ -78,7 +78,7 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
           <legend className="mb-2 block text-sm font-medium">
             Set the invoice status
           </legend>
-          <div className="rounded-md border border-gray-200 bg-white px-[14px] py-3">
+          <div className="rounded-md border border-gray-200 bg-white px-3.5 py-3">
             <div className="flex gap-4">
               <div className="flex items-center">
                 <input

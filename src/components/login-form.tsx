@@ -1,16 +1,16 @@
 "use client";
 
-import { lusitana } from "@/src/app/ui/fonts";
 import {
   AtSymbolIcon,
   KeyIcon,
   ExclamationCircleIcon,
 } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/20/solid";
-import { Button } from "@/src/app/ui/button";
 import { useActionState } from "react";
-import { authenticate } from "@/src/app/lib/actions";
 import { useSearchParams } from "next/navigation";
+import { authenticate } from "@/lib/actions";
+import { lusitana } from "./fonts";
+import { Button } from "@/components/ui/button";
 
 export default function LoginForm() {
   const searchParams = useSearchParams();

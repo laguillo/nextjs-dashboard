@@ -1,5 +1,5 @@
-import AcmeLogo from "@/src/app/ui/acme-logo";
-import LoginForm from "@/src/app/ui/login-form";
+import AcmeLogo from "@/components/acme-logo";
+import LoginForm from "@/components/login-form";
 import { Metadata } from "next";
 import { Suspense } from "react";
 

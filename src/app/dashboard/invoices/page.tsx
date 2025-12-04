@@ -1,12 +1,12 @@
-import Pagination from "@/src/app/ui/invoices/pagination";
-import Search from "@/src/app/ui/search";
-import Table from "@/src/app/ui/invoices/table";
-import { CreateInvoice } from "@/src/app/ui/invoices/buttons";
-import { lusitana } from "@/src/app/ui/fonts";
-import { InvoicesTableSkeleton } from "@/src/app/ui/skeletons";
-import { Suspense } from "react";
-import { fetchInvoicesPages } from "@/src/app/lib/data";
+import { lusitana } from "@/components/fonts";
+import { CreateInvoice } from "@/components/invoices/buttons";
+import Pagination from "@/components/invoices/pagination";
+import Table from "@/components/invoices/table";
+import Search from "@/components/search";
+import { InvoicesTableSkeleton } from "@/components/skeletons";
+import { fetchInvoicesPages } from "@/lib/data";
 import { Metadata } from "next";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Invoices",
